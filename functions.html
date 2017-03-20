@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+<h1>Functions</h1>
+<h3><p>
+	Function is block of reusable code.<br>
+	A function allows us to write code once and use it as manytimes as we want just calling the function.<br>
+	Syntax:
+	Funtion functin-name(parameter1,parameter2){
+	code
+	}
+</p></h3>
+<p>should a javascript function always return a value?<br>
+No,they don't have to.It totally depends on what you want the function to do.If an explicit return is ommitted,undefined is returned automatically.
+</p>
+<p id="p1"></p>
+<script>
+	function myfunction(a,b){
+return a * b;
+	}
+document.getElementById("p1").innerHTML= myfunction(2,3);
+
+
+var name = "civic";
+var model = 2017;
+function car(){
+alert(name);	
+}
+car();
+
+//donot repeat yourself DRYcode
+function car1(name,color){
+	alert(name);
+	alert(color);
+}
+car1("civic", "red");
+car1("honda", "blue");
+
+//return
+
+var name = prompt();
+
+function product(fir,sec){
+return fir*sec;	 
+}
+alert(product(2,3));
+
+function go(name,age){
+	if (name="jyo"){
+		return age;
+	}else{
+		return Jyothi;
+	}
+}
+alert(go("jyo",30));
+
+function add(Fnum,Lnum){
+	var result=Fnum+Lnum;
+	//return result;
+	document.write(result);
+}
+
+var sum =add(5,8);
+alert(sum);
+//document.write(sum);
+
+//undifined number
+/*var sum=add(2);
+document.write(sum);
+
+function drive(){
+	var res=start+drive
+	return res;
+}
+
+var car=drive(y,x);
+document.write(car);*/
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="mo"></p>
+
+<script>
+function myFunction() {
+    var a = 4;
+    document.getElementById("mo").innerHTML = a * a;
+} 
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Counting with a local variable.</p>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
+
+<script>
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myFunction(){
+    document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+</body>
+</html>
